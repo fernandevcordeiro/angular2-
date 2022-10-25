@@ -1,0 +1,14 @@
+Exercício: Filtrando dados de forma dinâmica.
+
+Criação de pipe com Angular 2+ para utilização em barra de busca - Filtro em tabela. No exercício foi utilizado conceitos de:
+ - Debounce Time
+ - PipeTransform 
+
+ API utilizada: Lista de distritos do Estado de São Paulo (ID e Nome)
+ https://servicodados.ibge.gov.br/api/v1/localidades/estados/35/distritos
+
+ O map foi utilizado para que receba os dados brutos da API, retornando somente os dados que desejamos obter - ID e nome em um novo objeto Array<{ id: number, nome: string }>
+
+ A cada evento keyup, o valor da variável filtro é alterado recebendo o novo valor do input, o valor input é lido utilizando o debounce time como parâmetro, evitando assim processamento desnecessário.
+
+
